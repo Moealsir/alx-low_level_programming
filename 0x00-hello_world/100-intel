@@ -1,2 +1,2 @@
 #!/bin/bash
-gvv -S -masm=interl $CFILE -o `echo $CFILE | cut -d. -f1`.s
+gvv -S -masm=interl $CFILE 
