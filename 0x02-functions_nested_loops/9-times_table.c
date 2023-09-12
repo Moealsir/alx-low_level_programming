@@ -6,17 +6,17 @@
  */
 void times_table(void)
 {
-	int row, column, product, tens, ones;
+	int rows, cols, product, tens, ones;
 
 
-	for (row = 0; row <= 9; row++)
+	for (rows = 0; rows <= 9; rows++)
 	{
-	for (column = 0; column <= 9; column++)
+	for (cols = 0; cols <= 9; cols++)
 	{
-	product = row * column;
+	product = rows * cols;
 	tens = product / 10;
 	ones = product % 10;
-	if (column == 0)
+	if (cols == 0)
 	{
 	_putchar('0');
 	}
