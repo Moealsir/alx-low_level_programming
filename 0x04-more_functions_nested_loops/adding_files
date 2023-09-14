@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Set the directory containing the files to push
+directory="/root/alx-low_level_programming/0x04-more_functions_nested_loops"  # Replace with the actual directory path
+cd "$directory" || exit
+
+# Get a list of all files in the directory
+files=(*)
+
+# Loop through each file and push it with a 30-second delay
+for file in "${files[@]}"; do
+    # Check if the item is a file (not a directory)
+    if [ -f "$file" ]; then
+        echo "Pushing $file to the remote repository..."
+        git add "$file"
+        git commit -m "Add $file"
+        git push  # Change 'master' to your branch name if needed
+        echo "Waiting for 30 seconds before the next push..."
+        sleep 30
+    fi
+done
+
+echo "All files pushed to the remote repository."
