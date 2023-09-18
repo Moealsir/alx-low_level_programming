@@ -2,21 +2,13 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - update n value
+ * reset_to_98 - update n value to 98
  *
- * @n: n value
- * @*n: reset value
+ * @n: int parameter
  * Return: Always 0.
 */
 
 int reset_to_98(int *n)
 {
-	int n = 402;
-
-	printf("n=%d\n", n);
-	int *n = &n;
 	*n = 98;
-
-	printf("n=%d\n", n);
-	return (0);
 }
