@@ -20,7 +20,7 @@ char *_strcat(char *dest, char *src)
 	while (dest[l1] != '\0')
 		l1++;
 	while (src[l2] != '\0')
-		l22++;
+		l2++;
 
 	res = (char *)malloc(l1 + l2 + 1);
 
