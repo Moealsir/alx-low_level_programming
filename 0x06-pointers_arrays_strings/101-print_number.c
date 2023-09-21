@@ -1,20 +1,27 @@
-102-magic.c
+#include "main.h"
 
-#include <stdio.h>
+/**
+ * print_number - print numbers chars
+ * @n: integer params
+ * Return: 0
+ */
 
-int main(void)
+void print_number(int n)
 {
-  int n;
-  int a[5];
-  int *p;
+	unsigned int n1;
 
-  a[2] = 1024;
-  p = &n;
+	n1 = n;
 
-  *(p + 5) = 98;
+	if (n < 0)
+	{
+		_putchar('-');
+		n1 = -n;
+	}
 
-  printf("a[2] = %d\n", a[2]);
-
-  return (0);
+	if (n1 / 10 != 0)
+	{
+		print_number(n1 / 10);
+	}
+	_putchar((n1 % 10) + '0');
 }
 
