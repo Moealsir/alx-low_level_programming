@@ -1,20 +1,17 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 /**
- * _strncpy - Entry point
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
  *
- * @dest : the input that we deal with it
- * @src : the input that we deal with it
- * @n :the input of the function
- * Return:  (Success)
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int ln = 0;
-	int ln2 = 0;
-	int j = 0;
+	int j;
 
+	j = 0;
 	while (j < n && src[j] != '\0')
 	{
 		dest[j] = src[j];
@@ -27,10 +24,5 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 
 	return (dest);
-
 }
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+
