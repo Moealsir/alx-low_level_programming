@@ -4,25 +4,25 @@
 /**
  * _strcmp - Entry point
  *
- * @s1 : the input that we deal with it
- * @s2 : the input that we deal with it
+ * @s1 : 1st string
+ * @s2 : 2nd string
  *
  * Return:  (Success)
  */
 int _strcmp(char *s1, char *s2)
 {
-	int ln = 0;
+	int l = 0;
 
 
 
-	while ((s1[ln] != '\0') && (s2[ln] != '\0'))
+	while ((s1[l] != '\0') && (s2[l] != '\0'))
 	{
 
-		if (s1[ln] != s2[ln])
+		if (s1[l] != s2[l])
 		{
-			return (s1[ln] - s2[ln]);
+			return (s1[l] - s2[l]);
 		}
-		ln++;
+		l++;
 	}
 	return (0);
 
