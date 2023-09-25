@@ -1,23 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_chessboard - Entry point
- *
- * @a: array
- *
- * Return: Always 0
- */
+ * print_chessboard - prints the chessboard
+ * @a: the rows
+ * Return: nothing!
+*/
 
 void print_chessboard(char (*a)[8])
 {
-	int f, m;
+	int in, jn;
 
-	for (f = 0; f < 8; f++)
+	for (in = 0; in < 8; in++)
 	{
-		for (m = 0; m < 8; m++)
+		for (jn = 0; jn < 8; jn++)
 		{
-			_putchar (a[f][m]);
+			_putchar(a[in][jn]);
 		}
 		_putchar('\n');
 	}
