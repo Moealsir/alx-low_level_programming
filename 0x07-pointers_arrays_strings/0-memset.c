@@ -5,12 +5,12 @@
  * @s: pointer
  * @b: constant value
  * @n: maximum number of filling
- * Return: s 
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int inc; //increase untill n reach 0
+	unsigned int inc; /**increase untill n reach 0*/
 
 	for (inc = 0; n > 0; inc++)
 		s[inc] = b;
