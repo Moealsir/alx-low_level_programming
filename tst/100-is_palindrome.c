@@ -1,10 +1,15 @@
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
+
+/**
+ * is_palindrome - check if s string is equal left to right that right to left
+ * @s: string
+ * Return: 0 or 1 if s is palindrome world
+ */
 
 int is_palindrome(char *s)
 {
 	int i, j;
-	
+
 	i = 0;
 	j = strlen(s) - 1;
 	while (i < j)
@@ -16,4 +21,3 @@ int is_palindrome(char *s)
 	}
 	return (1);
 }
-
