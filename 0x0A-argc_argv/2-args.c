@@ -4,11 +4,12 @@
  * main - prints all arguments it receives.
  * @argc: count
  * @argv: value
+ * Return: 0
  */
 
 int main(int argc, char **argv)
 {
-	int i; 
+	int i;
 
 	for (i = 1; i < argc; i++)
 	{
