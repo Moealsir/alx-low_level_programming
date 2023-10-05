@@ -4,7 +4,7 @@
 /**
  * argstostr - concatenates all the arguments of your program.
  *
- * @ac: integer 
+ * @ac: integer
  *
  * @av: string
  *
