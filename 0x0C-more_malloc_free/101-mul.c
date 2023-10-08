@@ -5,7 +5,7 @@
  * @str: tring to measure.
  *
  * Return: length of the string.
- */ 
+ */
 int find_len(char *str)
 {
 	int l = 0;
@@ -14,7 +14,7 @@ int find_len(char *str)
 		l++;
 
 	return (l);
-} 
+}
 
 /**
  * create_xarray - Creates an array and initializes it with
@@ -27,12 +27,12 @@ int find_len(char *str)
  */
 char *create_xarray(int size)
 {
-	char *array
+	char *array;
 	int index;
 
 	array = malloc(sizeof(char) * size);
 
-	if(array == NULL)
+	if (array == NULL)
 		exit(98);
 
 	for (index = 0; index < (size - 1); index++)
@@ -52,7 +52,7 @@ char *create_xarray(int size)
  */
 char *iterate_zeroes(char *str)
 {
-	while (*str & *str == '0')
+	while (*str && *str == '0')
 		str++;
 
 	return (str);
@@ -72,11 +72,11 @@ int get_digit(char c)
 	if (d < 0 || d > 9)
 	{
 		printf("Error\n");
-		exit(98)
+		exit(98);
 	}
 
-	return(d);
-}
+	return (d);
+} 
 
 /**
  * get_prod - Multiply a string of numbers by a single digit.
@@ -146,7 +146,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 	{
 		num = (*final_prod - '0') + (*next_prod - '0');
 		num += tens;
-		*final_prod = (num % 10) + '0'
+		*final_prod = (num % 10) + '0';
 		tens = num / 10;
 
 		next_prod--;
@@ -194,7 +194,7 @@ int main(int argc, char *argv[])
 		argv[2] = iterate_zeroes(argv[2]);
 	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
-		_("0\n");
+		_putchar("0\n");
 		return (0);
 	}
 
@@ -211,9 +211,9 @@ int main(int argc, char *argv[])
 	for (index = 0; final_prod[index]; index++)
 	{
 		if (final_prod[index] != 'x')
-			putchar(final_prod[index]);
+			_putchar(final_prod[index]);
 	}
-	putchar('\n');
+	_putchar('\n');
 
 	free(next_prod);
 	free(final_prod);
