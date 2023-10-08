@@ -27,7 +27,7 @@ int find_len(char *str)
  */
 char *create_xarray(int size)
 {
-	char array
+	char *array
 	int index;
 
 	array = malloc(sizeof(char) * size);
