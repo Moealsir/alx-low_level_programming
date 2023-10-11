@@ -26,6 +26,12 @@ int main(int argc, char *argv[])
 		exit (98);
 	}
 
+	if (strcmp(argv[2], "/") == 0 && atoi(argv[3]) == 0)
+	{
+		fprintf(stderr, "Error\n");
+		exit(100);
+	}
+
 	printf("%d\n", func(atoi(argv[1]), atoi(argv[3])));
 
 	return (0);
