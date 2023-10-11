@@ -1,5 +1,3 @@
-#include "calc.h"
-
 /**
  * op_add - add two numbers
  * @a: num 1
