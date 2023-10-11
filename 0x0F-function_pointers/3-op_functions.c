@@ -1,3 +1,8 @@
+#include "calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
  * op_add - add two numbers
  * @a: num 1
