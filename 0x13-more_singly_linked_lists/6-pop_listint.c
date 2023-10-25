@@ -4,18 +4,19 @@
  * pop_listint - pops head node of list
  * @node: addrees of pointer
  * Return: valie
-*/
-
+ */
 int pop_listint(listint_t **head)
 {
-	listint_t *node;
+	listint_t *temp;
+	int num;
 
-	int n;
-		if (!head || *head)
+	if (!head || !*head)
 		return (0);
 
-	node = (*head)->next;
-	n = node->n;
-	*head = node;
-	return (n);
+	num = (*head)->n;
+	temp = (*head)->next;
+	free(*head);
+	*head = temp;
+
+	return (num);
 }
