@@ -12,7 +12,7 @@ int _strlen(char *s)
 	int i = 0;
 	if (!s)
 		return (0);
-	while (str[i]!= '\0')
+	while (s[i]!= '\0')
 		i++;
 	return (i);
 }
@@ -25,7 +25,7 @@ int _strlen(char *s)
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
-	ssize_t bytes = 0, len = _strlen(text_content)
+	ssize_t bytes = 0, len = _strlen(text_content);
 
 	if (!filename)
 		return (-1);
