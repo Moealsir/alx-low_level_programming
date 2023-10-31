@@ -6,6 +6,7 @@
 #include <string.h>
 #include<unistd.h>
 #include<fcntl.h>
+#include <sys/stat.h>
 
 #define BUF_SIZE 1024
 #define READ_BUF_SIZE 1024
