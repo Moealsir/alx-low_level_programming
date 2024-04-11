@@ -1,3 +1,4 @@
+#include "search_algos.h"
 /**
  * print_subarr - a Function that ..
  * @arr: Description of arr.
