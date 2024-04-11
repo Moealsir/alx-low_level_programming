@@ -1,10 +1,8 @@
-
 /**
- * print_subarr - a Function that ...
+ * print_subarr - a Function that ..
  * @arr: Description of arr.
  * @l: Description of l.
  * @r: Description of r.
- * Return: Description of the return value.
  */
 void print_subarr(int *arr, int l, int r)
 {
@@ -24,7 +22,8 @@ void print_subarr(int *arr, int l, int r)
  * binary_search - a Function that ...
  * @array: Description of array.
  * @size: Description of size.
- * @value: Description of value.
+ * @value: Description of Value.
+ *
  * Return: Description of the return value.
  */
 int binary_search(int *array, size_t size, int value)
@@ -48,4 +47,3 @@ int binary_search(int *array, size_t size, int value)
 
 	return (-1);
 }
-
